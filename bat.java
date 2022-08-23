@@ -31,14 +31,14 @@ public class bat {
 				break;
 			}	
 			
-			System.out.println("현재 턴 수 :" + turn );
-			System.out.println("*** " + name + "기사의 체력 : " + life_1 + " ***");
-			System.out.println("*** 몬스터의 체력 : " + life_2 + " ***");
-			System.out.println("*** 남은 회복 가능 횟수 : " + heal_1 + " ***" );
+			System.out.println("Number of turns now :" + turn );
+			System.out.println("*** " + name + "'s Physical strength : " + life_1 + " ***");
+			System.out.println("*** Monster's Physical strength : " + life_2 + " ***");
+			System.out.println("*** Number of recoverable remaining : " + heal_1 + " ***" );
 			System.out.println("-------------------------");
-			System.out.println("1. 공격한다  2. 방어한다  3. 회복한다");
+			System.out.println("1. Attack  2. Defense  3. Recovery");
 			System.out.println("-------------------------");
-			System.out.println("무엇을 할까요?");
+			System.out.println("What should I do?");
 			
 			Random random = new Random();
 			int num = 0;
