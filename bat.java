@@ -7,10 +7,10 @@ public class bat {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("»ç¿ëÀÚ ´Ğ³×ÀÓÀ» ÀÔ·ÂÇÏ¼¼¿ä. :");
+		System.out.println("Please enter your username. :");
 		String name = scanner.next();
-		System.out.println("¼³Á¤µÇ¾ú½À´Ï´Ù!");
-		System.out.println("¾ß»ıÀÇ ¸ó½ºÅÍ°¡ ³ªÅ¸³µ´Ù!");
+		System.out.println("Ready");
+		System.out.println("A wild monster appeared!");
 		System.out.println("");
 		System.out.println("-------------------------");
 		
@@ -22,23 +22,23 @@ public class bat {
 		
 		while(true) {
 			if (life_1 <= 0 ) {
-				System.out.println("¸ó½ºÅÍÀÇ ½Â¸®");
+				System.out.println("Monster's Win");
 				break;
 			}
 			
 			if (life_2 <= 0 ) {
-				System.out.println(name +"ÀÇ ½Â¸®");
+				System.out.println(name +"'s Win");
 				break;
 			}	
 			
-			System.out.println("ÇöÀç ÅÏ ¼ö :" + turn );
-			System.out.println("*** " + name + "±â»çÀÇ Ã¼·Â : " + life_1 + " ***");
-			System.out.println("*** ¸ó½ºÅÍÀÇ Ã¼·Â : " + life_2 + " ***");
-			System.out.println("*** ³²Àº È¸º¹ °¡´É È½¼ö : " + heal_1 + " ***" );
+			System.out.println("í˜„ì¬ í„´ ìˆ˜ :" + turn );
+			System.out.println("*** " + name + "ê¸°ì‚¬ì˜ ì²´ë ¥ : " + life_1 + " ***");
+			System.out.println("*** ëª¬ìŠ¤í„°ì˜ ì²´ë ¥ : " + life_2 + " ***");
+			System.out.println("*** ë‚¨ì€ íšŒë³µ ê°€ëŠ¥ íšŸìˆ˜ : " + heal_1 + " ***" );
 			System.out.println("-------------------------");
-			System.out.println("1. °ø°İÇÑ´Ù  2. ¹æ¾îÇÑ´Ù  3. È¸º¹ÇÑ´Ù");
+			System.out.println("1. ê³µê²©í•œë‹¤  2. ë°©ì–´í•œë‹¤  3. íšŒë³µí•œë‹¤");
 			System.out.println("-------------------------");
-			System.out.println("¹«¾ùÀ» ÇÒ±î¿ä?");
+			System.out.println("ë¬´ì—‡ì„ í• ê¹Œìš”?");
 			
 			Random random = new Random();
 			int num = 0;
@@ -53,83 +53,83 @@ public class bat {
 			if (how == 1 && num == 1) {
 				life_2 = life_2 - 20;
 				life_1 = life_1 - 10;
-				System.out.println(name + "±â»çÀÇ °ø°İ!");
-				System.out.println("¸ó½ºÅÍ¿¡°Ô 20ÀÇ µ¥¹ÌÁö¸¦ ÀÔÇû´Ù!");
-				System.out.println("¸ó½ºÅÍÀÇ °ø°İ!");
-				System.out.println(name + "±â»ç´Â 10ÀÇ µ¥¹ÌÁö¸¦ ÀÔ¾ú´Ù!");
+				System.out.println(name + "ê¸°ì‚¬ì˜ ê³µê²©!");
+				System.out.println("ëª¬ìŠ¤í„°ì—ê²Œ 20ì˜ ë°ë¯¸ì§€ë¥¼ ì…í˜”ë‹¤!");
+				System.out.println("ëª¬ìŠ¤í„°ì˜ ê³µê²©!");
+				System.out.println(name + "ê¸°ì‚¬ëŠ” 10ì˜ ë°ë¯¸ì§€ë¥¼ ì…ì—ˆë‹¤!");
 				turn++;
 				
 			}else if (how == 1 && num == 2) {
-				System.out.println( "¸ó½ºÅÍ´Â ¹æ¾îÅÂ¼¼¿¡ µé¾î°¬´Ù.");
-				System.out.println( name +"±â»çÀÇ °ø°İ!");
-				System.out.println( "¸ó½ºÅÍ´Â °ø°İÀ» ¹æ¾îÇß´Ù!");
+				System.out.println( "ëª¬ìŠ¤í„°ëŠ” ë°©ì–´íƒœì„¸ì— ë“¤ì–´ê°”ë‹¤.");
+				System.out.println( name +"ê¸°ì‚¬ì˜ ê³µê²©!");
+				System.out.println( "ëª¬ìŠ¤í„°ëŠ” ê³µê²©ì„ ë°©ì–´í–ˆë‹¤!");
 				turn++;
 			
 			}else if (how == 1 && num == 3) {
-				System.out.println("¸ó½ºÅÍ´Â È¸º¹ÁÖ¹®À» »ç¿ëÇß´Ù!.");
-				System.out.println("¸ó½ºÅÍ´Â Ã¼·ÂÀÌ È¸º¹µÇ¾ú´Ù.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” íšŒë³µì£¼ë¬¸ì„ ì‚¬ìš©í–ˆë‹¤!.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” ì²´ë ¥ì´ íšŒë³µë˜ì—ˆë‹¤.");
 				life_2 = life_2 + 15;
 				heal_2--;
-				System.out.println( name +"±â»çÀÇ °ø°İ!");
+				System.out.println( name +"ê¸°ì‚¬ì˜ ê³µê²©!");
 				life_2 = life_2 - 20;
 				turn++;
 				
 			}else if (how == 2 && num == 1) {
-				System.out.println(name + "±â»çÀÇ ¹æ¾î!");
-				System.out.println( name + "(Àº)´Â ¹æ¾îÅÂ¼¼¿¡ µé¾î°¬´Ù.");
-				System.out.println("¸ó½ºÅÍÀÇ °ø°İ!");
-				System.out.println("ÇÏÁö¸¸" + name + "±â»ç´Â °ø°İÀ» ¹æ¾îÇß´Ù!");
+				System.out.println(name + "ê¸°ì‚¬ì˜ ë°©ì–´!");
+				System.out.println( name + "(ì€)ëŠ” ë°©ì–´íƒœì„¸ì— ë“¤ì–´ê°”ë‹¤.");
+				System.out.println("ëª¬ìŠ¤í„°ì˜ ê³µê²©!");
+				System.out.println("í•˜ì§€ë§Œ" + name + "ê¸°ì‚¬ëŠ” ê³µê²©ì„ ë°©ì–´í–ˆë‹¤!");
 				turn++;
 				
 			}else if (how == 2 && num == 2) {
-				System.out.println( name + "(Àº)´Â ¹æ¾îÅÂ¼¼¿¡ µé¾î°¬´Ù.");
-				System.out.println("¸ó½ºÅÍ´Â ¹æ¾îÅÂ¼¼¿¡ µé¾î°¬´Ù.");
-				System.out.println("¾Æ¹«ÀÏ ¾øÀ½.");
+				System.out.println( name + "(ì€)ëŠ” ë°©ì–´íƒœì„¸ì— ë“¤ì–´ê°”ë‹¤.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” ë°©ì–´íƒœì„¸ì— ë“¤ì–´ê°”ë‹¤.");
+				System.out.println("ì•„ë¬´ì¼ ì—†ìŒ.");
 				turn++;
 			
 			}else if (how == 2 && num == 3) {
-				System.out.println( name + "(Àº)´Â ¹æ¾îÅÂ¼¼¿¡ µé¾î°¬´Ù.");
-				System.out.println("¸ó½ºÅÍ´Â È¸º¹ÁÖ¹®À» »ç¿ëÇß´Ù!.");
-				System.out.println("¸ó½ºÅÍ´Â Ã¼·ÂÀÌ È¸º¹µÇ¾ú´Ù.");
+				System.out.println( name + "(ì€)ëŠ” ë°©ì–´íƒœì„¸ì— ë“¤ì–´ê°”ë‹¤.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” íšŒë³µì£¼ë¬¸ì„ ì‚¬ìš©í–ˆë‹¤!.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” ì²´ë ¥ì´ íšŒë³µë˜ì—ˆë‹¤.");
 				life_2 = life_2 + 15;
 				heal_2--;				
 				turn++;
 			
 			}else if (how == 3 && num == 1) {
-				System.out.println( name + "(Àº)´Â È¸º¹ÁÖ¹®À» »ç¿ëÇß´Ù!.");
-				System.out.println( name + "(Àº)´Â Ã¼·ÂÀÌ È¸º¹µÇ¾ú´Ù.");
+				System.out.println( name + "(ì€)ëŠ” íšŒë³µì£¼ë¬¸ì„ ì‚¬ìš©í–ˆë‹¤!.");
+				System.out.println( name + "(ì€)ëŠ” ì²´ë ¥ì´ íšŒë³µë˜ì—ˆë‹¤.");
 				life_1 = life_1 + 15;
 				if (life_1 > 100) {
 					life_1 = 100;
 				}
 				heal_1--;
-				System.out.println("¸ó½ºÅÍÀÇ °ø°İ!");
+				System.out.println("ëª¬ìŠ¤í„°ì˜ ê³µê²©!");
 				life_1 = life_1 - 10;
-				System.out.println(name + "±â»ç´Â 10ÀÇ µ¥¹ÌÁö¸¦ ÀÔ¾ú´Ù!");
+				System.out.println(name + "ê¸°ì‚¬ëŠ” 10ì˜ ë°ë¯¸ì§€ë¥¼ ì…ì—ˆë‹¤!");
 				turn++;
 			
 			}else if (how == 3 && num == 2) {
-				System.out.println( name + "(Àº)´Â È¸º¹ÁÖ¹®À» »ç¿ëÇß´Ù!.");
-				System.out.println( name + "(Àº)´Â Ã¼·ÂÀÌ È¸º¹µÇ¾ú´Ù.");
+				System.out.println( name + "(ì€)ëŠ” íšŒë³µì£¼ë¬¸ì„ ì‚¬ìš©í–ˆë‹¤!.");
+				System.out.println( name + "(ì€)ëŠ” ì²´ë ¥ì´ íšŒë³µë˜ì—ˆë‹¤.");
 				life_1 = life_1 + 15;
 				if (life_1 > 100) {
 					life_1 = 100;
 				}
 				heal_1--;
-				System.out.println("¸ó½ºÅÍ´Â ¹æ¾îÅÂ¼¼¿¡ µé¾î°¬´Ù.");
-				System.out.println("¾Æ¹«ÀÏ ¾øÀ½.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” ë°©ì–´íƒœì„¸ì— ë“¤ì–´ê°”ë‹¤.");
+				System.out.println("ì•„ë¬´ì¼ ì—†ìŒ.");
 				turn++;
 			
 			}else if (how == 3 && num == 3) {
-				System.out.println( name + "(Àº)´Â È¸º¹ÁÖ¹®À» »ç¿ëÇß´Ù!.");
-				System.out.println( name + "(Àº)´Â Ã¼·ÂÀÌ È¸º¹µÇ¾ú´Ù.");
+				System.out.println( name + "(ì€)ëŠ” íšŒë³µì£¼ë¬¸ì„ ì‚¬ìš©í–ˆë‹¤!.");
+				System.out.println( name + "(ì€)ëŠ” ì²´ë ¥ì´ íšŒë³µë˜ì—ˆë‹¤.");
 				life_1 = life_1 + 15;
 				if (life_1 > 100) {
 					life_1 = 100;
 				}
 				heal_1--;
-				System.out.println("¸ó½ºÅÍ´Â È¸º¹ÁÖ¹®À» »ç¿ëÇß´Ù!.");
-				System.out.println("¸ó½ºÅÍ´Â Ã¼·ÂÀÌ È¸º¹µÇ¾ú´Ù.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” íšŒë³µì£¼ë¬¸ì„ ì‚¬ìš©í–ˆë‹¤!.");
+				System.out.println("ëª¬ìŠ¤í„°ëŠ” ì²´ë ¥ì´ íšŒë³µë˜ì—ˆë‹¤.");
 				life_2 = life_2 + 15;
 				heal_2--;
 				turn++;
