@@ -66,70 +66,70 @@ public class bat {
 				turn++;
 			
 			}else if (how == 1 && num == 3) {
-				System.out.println("몬스터는 회복주문을 사용했다!.");
-				System.out.println("몬스터는 체력이 회복되었다.");
+				System.out.println("The monster used a recovery spell!.");
+				System.out.println("The monster has recovered his strength.");
 				life_2 = life_2 + 15;
 				heal_2--;
-				System.out.println( name +"기사의 공격!");
+				System.out.println( name +"'s Attack!");
 				life_2 = life_2 - 20;
 				turn++;
 				
 			}else if (how == 2 && num == 1) {
-				System.out.println(name + "기사의 방어!");
-				System.out.println( name + "(은)는 방어태세에 들어갔다.");
-				System.out.println("몬스터의 공격!");
-				System.out.println("하지만" + name + "기사는 공격을 방어했다!");
+				System.out.println(name + "'s defense!");
+				System.out.println( name + "'s is on the defensive.");
+				System.out.println("Monster's Attack!");
+				System.out.println("But" + name + "'s defended the attack!");
 				turn++;
 				
 			}else if (how == 2 && num == 2) {
-				System.out.println( name + "(은)는 방어태세에 들어갔다.");
-				System.out.println("몬스터는 방어태세에 들어갔다.");
+				System.out.println( name + "'s is on the defensive.");
+				System.out.println("The monster is on the defensive.");
 				System.out.println("Nothing happened.");
 				turn++;
 			
 			}else if (how == 2 && num == 3) {
-				System.out.println( name + "(은)는 방어태세에 들어갔다.");
-				System.out.println("몬스터는 회복주문을 사용했다!.");
-				System.out.println("몬스터는 체력이 회복되었다.");
+				System.out.println( name + "'s is on the defensive.");
+				System.out.println("The monster used a recovery spell!.");
+				System.out.println("The monster has recovered his strength.");
 				life_2 = life_2 + 15;
 				heal_2--;				
 				turn++;
 			
 			}else if (how == 3 && num == 1) {
-				System.out.println( name + "(은)는 회복주문을 사용했다!.");
-				System.out.println( name + "(은)는 체력이 회복되었다.");
+				System.out.println( name + "'s used a recovery order!.");
+				System.out.println( name + "'s have recovered my strength.");
 				life_1 = life_1 + 15;
 				if (life_1 > 100) {
 					life_1 = 100;
 				}
 				heal_1--;
-				System.out.println("몬스터의 공격!");
+				System.out.println("Monster's Attack!");
 				life_1 = life_1 - 10;
-				System.out.println(name + "기사는 10의 데미지를 입었다!");
+				System.out.println(name + "'s was damaged by 10");
 				turn++;
 			
 			}else if (how == 3 && num == 2) {
-				System.out.println( name + "(은)는 회복주문을 사용했다!.");
-				System.out.println( name + "(은)는 체력이 회복되었다.");
+				System.out.println( name + "'s used a recovery order!.");
+				System.out.println( name + "'s have recovered my strength.");
 				life_1 = life_1 + 15;
 				if (life_1 > 100) {
 					life_1 = 100;
 				}
 				heal_1--;
-				System.out.println("몬스터는 방어태세에 들어갔다.");
+				System.out.println("The monster is on the defensive.");
 				System.out.println("Nothing happened.");
 				turn++;
 			
 			}else if (how == 3 && num == 3) {
-				System.out.println( name + "(은)는 회복주문을 사용했다!.");
-				System.out.println( name + "(은)는 체력이 회복되었다.");
+				System.out.println( name + "'s used a recovery order!.");
+				System.out.println( name + "'s have recovered my strength.");
 				life_1 = life_1 + 15;
 				if (life_1 > 100) {
 					life_1 = 100;
 				}
 				heal_1--;
-				System.out.println("몬스터는 회복주문을 사용했다!.");
-				System.out.println("몬스터는 체력이 회복되었다.");
+				System.out.println("The monster used a recovery spell!.");
+				System.out.println("The monster has recovered his strength.");
 				life_2 = life_2 + 15;
 				heal_2--;
 				turn++;
