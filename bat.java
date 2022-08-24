@@ -53,16 +53,16 @@ public class bat {
 			if (how == 1 && num == 1) {
 				life_2 = life_2 - 20;
 				life_1 = life_1 - 10;
-				System.out.println(name + "기사의 공격!");
-				System.out.println("몬스터에게 20의 데미지를 입혔다!");
-				System.out.println("몬스터의 공격!");
-				System.out.println(name + "기사는 10의 데미지를 입었다!");
+				System.out.println(name + "'s Attack!");
+				System.out.println("The monster was damaged 20!");
+				System.out.println("Monster's Attack!");
+				System.out.println(name + "'s was damaged 20");
 				turn++;
 				
 			}else if (how == 1 && num == 2) {
-				System.out.println( "몬스터는 방어태세에 들어갔다.");
-				System.out.println( name +"기사의 공격!");
-				System.out.println( "몬스터는 공격을 방어했다!");
+				System.out.println( "The monster is on the defensive.");
+				System.out.println( name +"'s Attack!");
+				System.out.println( "The monster defended the attack!");
 				turn++;
 			
 			}else if (how == 1 && num == 3) {
@@ -84,7 +84,7 @@ public class bat {
 			}else if (how == 2 && num == 2) {
 				System.out.println( name + "(은)는 방어태세에 들어갔다.");
 				System.out.println("몬스터는 방어태세에 들어갔다.");
-				System.out.println("아무일 없음.");
+				System.out.println("Nothing happened.");
 				turn++;
 			
 			}else if (how == 2 && num == 3) {
@@ -117,7 +117,7 @@ public class bat {
 				}
 				heal_1--;
 				System.out.println("몬스터는 방어태세에 들어갔다.");
-				System.out.println("아무일 없음.");
+				System.out.println("Nothing happened.");
 				turn++;
 			
 			}else if (how == 3 && num == 3) {
